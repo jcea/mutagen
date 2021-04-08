@@ -207,7 +207,7 @@ The following code adds two chapters to a file:
     audio = ID3("example.mp3")
     audio.add(
         CTOC(element_id=u"toc", flags=CTOCFlags.TOP_LEVEL | CTOCFlags.ORDERED,
-             child_element_ids=[u"chp1", "chp2"],
+             child_element_ids=[u"chp1", u"chp2"],
              sub_frames=[
                 TIT2(text=[u"I'm a TOC"]),
             ]))
